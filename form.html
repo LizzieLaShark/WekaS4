@@ -1,1 +1,38 @@
 
+In the file, create a sign up form that posts to /sign-up, and collects the following user data:
+nameGiven
+nameFamily
+emailAddress
+streetAddress (use a textarea)
+mobileNumber
+bornOn (date of birth)
+favoriteColor (select with red, yellow, green, cyan, blue, magenta, white, gray, and black)
+acceptsTerms (checkbox)
+Use fieldsets for names, addresses/numbers, and profile data
+
+
+<form action="/sign-up" method="post">
+  <fieldset>
+    <legend>Name</legend>
+      <label>First Name:</label><input type="text" name="firstname"</input>
+      <label>Last Name:</label><input type="text" name="lastname"</input>
+  </fieldset>
+  
+  <fieldset>
+    <legend>How can we get in touch?</legend>
+      <label>Phone Number:</label><input type="Tel" name="tel"</input>
+      <label>Email Address:</label><input type="email" name="userEmail"</input></label>
+      <label>Street Address:</label> <textarea> </textarea>
+  </fieldset>
+
+  <fieldset>
+   <legend>Tell Us About Yourself</legend>
+      <label>Date of Birth:<input type="date" name="D.O.B"</input> 
+      <label>Favourite Colour:</label><input type="color" name="favColour"</input>
+  </fieldset>
+  
+  <fieldset>
+    <label>I agree to the Terms and Conditions:</label><input type="checkbox"</input>
+    <input type="button" name"submit">Click to Submit</input>
+  </fieldset>
+</form>
